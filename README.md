@@ -33,7 +33,7 @@ As part of the FPGA Design course experiment, this implementation involved:
 &emsp;corresponding operations based on the following received parameters: <br>
 &emsp; (1) Parameters **a** and **b**, which serve as data inputs and receive two operands respectively.<br>
 &emsp; (2) Parameter **op**, which functions as the operation control input and specifies the type of operation to be <br>
-&emsp; &emsp; &ensp; executed.<br><br>
+&emsp; &emsp; &nbsp; executed.<br><br>
 **4. Memory Access**<br>
 &emsp;Only **Load** instructions (lw, lh, lhu, lb, lbu) and **Store** instructions (sw, sh, sb) enter this stage to access the <br> 
 &emsp;DataRAM. <br>
@@ -53,7 +53,7 @@ As part of the FPGA Design course experiment, this implementation involved:
 # Data Path Design
 ![RV321 Data Path](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/RV32I%20Data%20Path.png) <br>
 &emsp;Based on the overall design shown in the diagram above, we ultimately developed the CPU component <br>
-&emsp;(with the code located at [CPU.v](final.srcs/sources_1/new/CPU.v)),which integrated each component using the data path. <br>
+&emsp;(with the code located at [CPU.v](final.srcs/sources_1/new/CPU.v)), which integrated each component using the data path. <br>
 &emsp;This ensures that signals and parameters are correctly transmitted and received, enabling seamless <br>
 &emsp;collaboration between components.<br><br>
 # Details of RAM and ROM Configuration <br>
