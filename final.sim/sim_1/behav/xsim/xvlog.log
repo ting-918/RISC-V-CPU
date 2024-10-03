@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/ip/insROM_1/sim/insROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module insROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/ip/DataRAM/sim/DataRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/IOmanager.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOmanager
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sources_1/new/myRegFiles.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFiles
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/29047/Desktop/final17/final17.srcs/sim_1/new/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
