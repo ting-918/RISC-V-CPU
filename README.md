@@ -23,25 +23,28 @@ As part of the FPGA Design course experiment, this implementation involved:
 ![RV321 Instruction Format](https://devopedia.org/images/article/110/3808.1535301636.png "RV321 Instruction Format") <br>
 &emsp;&emsp;• The signals such as **opcode**, **funct3**, **funct7**, which determine the type of operation, will be passed to the<br>
 &emsp;&emsp;&emsp;CU for further processing.<br>
-&emsp;&emsp;• The signals **rs1**, **rs2**, **rd**, which specify the registers to read (rs1, rs2) and to write (rd) respectively, <br>
-&emsp;&emsp;&emsp;will be passed to the RegFiles.<br><br>
+&emsp;&emsp;• The signals **rs1**, **rs2**, **rd**, which specify the registers to read (rs1, rs2) and to write (rd) respectively, will <br>
+&emsp;&emsp;&emsp; be passed to the RegFiles.<br><br>
 &emsp; (2) CU (with the code located at [CU.v](final.srcs/sources_1/new/CU.v))<br>
 &ensp;&emsp;&emsp;The CU generates different control signals based on the opcode and func signals provided by the ID,<br>
 &ensp;&emsp;&emsp;enabling the RegFiles, ALU, RAM, and other components to perform their respective operations.<br><br>
 **3. Execution**<br>
-&emsp;At this stage, we primarily design the ALU component (with the code located at [ALU.v](final.srcs/sources_1/new/ALU.v)) to perform <br>
-&emsp;corresponding operations based on the following received parameters: <br>
+&emsp;At this stage, we primarily design the ALU component (with the code located at [ALU.v](final.srcs/sources_1/new/ALU.v)) to perform corresponding<br>
+&emsp;operations based on the following received parameters: <br>
 &emsp; (1) Parameters **a** and **b**, which serve as data inputs and receive two operands respectively.<br>
-&emsp; (2) Parameter **op**, which functions as the operation control input and specifies the type of operation to be executed.<br><br>
+&emsp; (2) Parameter **op**, which functions as the operation control input and specifies the type of operation to be <br>
+&emsp; &emsp; executed.<br><br>
 **4. Memory Access**<br>
-&emsp;Only **Load** instructions (lw, lh, lhu, lb, lbu) and **Store** instructions (sw, sh, sb) enter this stage to access the DataRAM. <br>
+&emsp;Only **Load** instructions (lw, lh, lhu, lb, lbu) and **Store** instructions (sw, sh, sb) enter this stage to access the <br> 
+&emsp;DataRAM. <br>
 &emsp;The DataRAM module primarily performs data read and write operations based on the received parameter:  <br>
 &emsp;&emsp;• **write enable signal (we)** <br>
 &emsp;&emsp;• **address (a)** <br> 
 &emsp;&emsp;• **writing data(d)**.<br>
-&emsp;The work at this stage primarily involves the IOmanager component that we design (with the code located at [IOmanager.v](final.srcs/sources_1/new/IOmanager.v))<br><br>
+&emsp;The work at this stage primarily involves the IOmanager component (with the code located at [IOmanager.v](final.srcs/sources_1/new/IOmanager.v))<br><br>
 **5. Write-Back**<br>
-&emsp;The main task at this stage is to write the target data into the register **rd**, which can be categorized into the following cases:<br>
+&emsp;The main task at this stage is to write the target data into the register **rd**, which can be categorized into the <br>
+&emsp;following cases:<br>
 &emsp;&emsp;• **Load** instruction: Write the data fetched from DataRam (**mdata**) into rd.<br>
 &emsp;&emsp;• **Jal** instruction: Write the address of the next instruction (**PC+4**) into rd.<br>
 &emsp;&emsp;• Most instructions: Write the ALU computation result (**f**) into rd.<br>
