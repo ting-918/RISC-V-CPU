@@ -17,7 +17,8 @@ As part of the FPGA Design course experiment, this implementation involved:
 **2. Instruction Decode**<br>
 &emsp;The work at this stage primarily involves the following two components:<br>
 &emsp; (1) ID (with the code located at [ID.v](final.srcs/sources_1/new/ID.v))<br>
-&ensp;&emsp;&emsp; The ID decodes the retrieved instructions, generating corresponding signals such as opcode, func, rs1, rs2, rd, imm12, and imm20.<br>
+&ensp;&emsp;&emsp; The ID decodes the retrieved instructions, generating corresponding signals such as opcode, func, rs1,<br>
+&ensp;&emsp;&emsp; rs2, rd, imm12, and imm20.<br>
 &ensp;&emsp;&emsp; For details regarding decoding, please refer to **RV321 Instruction Format** as shown in the diagram below.
 ![RV321 Instruction Format](https://devopedia.org/images/article/110/3808.1535301636.png "RV321 Instruction Format") <br>
 &emsp;&emsp;• The signals such as **opcode**, **funct3**, **funct7**, which determine the type of operation, will be passed to the CU for further processing.<br>
