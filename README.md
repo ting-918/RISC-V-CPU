@@ -22,12 +22,11 @@ As part of the FPGA Design course experiment, this implementation involved:
 &ensp;&emsp;&emsp; For details regarding decoding, please refer to **RV321 Instruction Format** as shown in the diagram below.
 ![RV321 Instruction Format](https://devopedia.org/images/article/110/3808.1535301636.png "RV321 Instruction Format") <br>
 &emsp;&emsp;• The signals such as **opcode**, **funct3**, **funct7**, which determine the type of operation, will be passed to the<br>
-&emsp;&emsp;&nbsp;CU for further processing.<br>
+&emsp;&emsp;&ensp;CU for further processing.<br>
 &emsp;&emsp;• The signals **rs1**, **rs2**, **rd**, which specify the registers to read (rs1, rs2) and to write (rd) respectively, <br>
-&emsp;&emsp;&nbsp;will be passed to the RegFiles.<br><br>
+&emsp;&emsp;&ensp;will be passed to the RegFiles.<br><br>
 &emsp; (2) CU (with the code located at [CU.v](final.srcs/sources_1/new/CU.v))<br>
-&ensp;&emsp;&emsp;The CU generates different control signals based on the opcode and func signals provided by the ID, enabling the <br>
-&ensp;&emsp;&emsp;RegFiles, ALU, RAM,<br>
+&ensp;&emsp;&emsp;The CU generates different control signals based on the opcode and func signals provided by the ID, enabling the RegFiles, ALU, RAM,<br>
 &ensp;&emsp;&emsp;and other components to perform their respective operations.<br><br>
 **3. Execution**<br>
 &emsp;At this stage, we primarily design the ALU component (with the code located at [ALU.v](final.srcs/sources_1/new/ALU.v)) to perform corresponding operations based on<br>
