@@ -45,25 +45,25 @@ As part of the FPGA Design course experiment, this implementation involved:
 &emsp;The work at this stage primarily involves the RegFiles component that we design (with the code located at [RegFiles.v](final.srcs/sources_1/new/RegFiles.v))<br><br>
 
 # Data Path Design
-![RV321 Data Path](https://github.com/ting-918/RISC-V-CPU/blob/444ca13b4deff695e3aaaaa48287d6beb445f575/images/RV32I%20Data%20Path.png "RV321 Data Path") <br>
+![RV321 Data Path](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/RV32I%20Data%20Path.png) <br>
 &emsp;Based on the overall design shown in the diagram above, we ultimately developed the CPU component (with the code located at [CPU.v](final.srcs/sources_1/new/CPU.v)),<br>
 &emsp;which integrated each component using the data path. <br>
 &emsp;This ensures that signals and parameters are correctly transmitted and received, enabling seamless collaboration between components.<br><br>
 # Details of RAM and ROM Configuration <br>
 &emsp;(1) RAM<br>
-&emsp; ![RAM Configuration](https://github.com/ting-918/RISC-V-CPU/blob/7cee19d3c5c1702b8379068604f5cf14a788931a/images/RAM%20Configuration.png)<br>
+&emsp; ![RAM Configuration](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/RAM%20Configuration.png)<br>
 &emsp;(2) ROM<br>
-&emsp; ![ROM Configuration](https://github.com/ting-918/RISC-V-CPU/blob/15eeb965e85b48c071af3c7a80e25357056d563d/images/ROM%20Configuration.png)<br>
+&emsp; ![ROM Configuration](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/ROM%20Configuration.png)<br>
 # Result of the Fibonacci Sequence <br>
 1. **Coefficient File** <br>
-&nbsp;The coefficient file ([ins.coe](/ins/ins.coe)) was written with reference to the machine code ([fibonacci](https://github.com/ting-918/RISC-V-CPU/blob/67e76f72b430befb1b20c471760af4a596c88761/machine%20code/fibonacci)) to implement the Fibonacci <br>
+&nbsp;The coefficient file ([ins.coe](/ins/ins.coe)) was written with reference to the machine code ([fibonacci](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/machine%20code/fibonacci)) to implement the Fibonacci <br>
 &nbsp;sequence calculation.<br><br>
 2. **Simulation Result** <br>
-![Simulation Result](https://github.com/ting-918/RISC-V-CPU/blob/cb0f0aec330add52928233191e20794abc1a6933/images/Simulation%20Result.png "Simulation Result")<br><br>
+![Simulation Result](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/Simulation%20Result.png)<br><br>
 3. **Output on Circuit Board** <br>
 &nbsp;To match the circuit board, the original 31-bit peripheral output **result** was modified to a 10-bit data format, <br>
 &nbsp;(since the Fibonacci number f(15) = 610 = 1001100010b) corresponding to bits 0 through 9 of the 31-bit **wdata**. <br><br>
 &nbsp; The input data **n** is controlled by **R1**, **N4**, **M4**, and **R2** on the circuit board, while the output **result** is displayed <br>
 &nbsp; from **K3** to **J2** (from right to left of the circuit board). <br><br>
 &nbsp; The final output, f(8) = 0000010101b, is shown in the figure below.<br>
-&nbsp; ![Output on Circuit Board](https://github.com/ting-918/RISC-V-CPU/blob/07b3c2b1fa20c9bf61849f44bf8dfb59811bd272/images/Circuit%20Board.png "Output on Circuit Board")<br>
+&nbsp; ![Output on Circuit Board](https://github.com/ting-918/RISC-V-CPU/blob/9025d5eafe1a73a864e4820e0db69587ec5b3f4c/images/Circuit%20Board.png)<br>
